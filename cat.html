@@ -64,7 +64,11 @@ a specific scope maybe inside a function, it is a local variable.
 
   <p>Q4:<br>
       The out put is not the same; the first function returns the object, bar: "hello" but the second function is undefined
-  </p>
+    This is because we cant have any declaration after return. The code is unreachable . in function one1() the first curl brace is on the same line
+    and this is why we get the result.<br> In the second function two2 we dont get the result because the curl brace is on a new 
+    line different from the return statemet so the return statemet is eveluated alone and the object alone. 
+ 
+    </p>
 </body>
 </html>
 
