@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>Javascript cat</title>
+  <head lang="en">
+  <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Javascript CAT</h2>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+        }
+    </style>
+ 
+    <script>
+        function getInput() {
+            var name = document.getElementById("name").value;          
+            var clas = document.getElementById("class").value;
+            var subject = document.getElementById("subject").value;
+            var date = document.getElementById("date").value;
+            var result = `${name} from ${clas} is offering ${subject} on ${date}`;
+            document.getElementById('spanResult').textContent = result;
+             
+        }
+    </script>
+
+    <p> Please enter your name</p>
+    <input type="text" id="name" /> <br>
+    <p> Please enter your class</p>
+    <input type="text" id="class" /> <br>
+    <p> Please enter your subject</p>
+    <input type="text" id="subject" /> <br>
+    <p> Please select the date</p>
+    <input type="date" id="date" /> <br>
+    <p>
+    <button  onclick="getInput()">Get results</button> <br /> </p>
+    <span id="spanResult">
+
+    </span>
+
+<p> Q2: <br> An object is acontainer that holds keys and values enclosed in curl braces. the keys and values are separated by commas<br>
+    An object can be created using the var, let or const key word here is the synthax:<br>
+    let car= {
+        color: "white",
+        brand:"Toyota",
+        price: 65756,
+        mileage:67
+    }
+
+</p>
+  <p> Q3: <br> A scope of a variable is the area or space in the code where it is available or can be accessed.</p>
+
+  <p>Q4:<br>
+      The out put is not the same; the first function returns the object, bar: "hello" but the second function is undefined
+  </p>
+</body>
+</html>
+
